@@ -1,0 +1,154 @@
+.CarCont {
+  position: relative;
+  animation-name: Car;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  width: 70%;
+  z-index: 1;
+  margin-top: 300px;
+}
+
+.Car {
+  width: 350px;
+  height: 350px;
+}
+
+.SaburavisWre {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background-image: url(foto/saburavi.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: -180px;
+  margin-left: 66px;
+  animation-name: Saburavebi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.SaburavisWre2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background-image: url(foto/saburavi.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: -180px;
+  margin-left: 239px;
+  rotate: 110deg;
+  animation-name: Saburavebi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.BigBall {
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  background-image: url(foto/ball.jpg);
+  background-size: 200px;
+  background-position: -30px -15px;
+  right: 0;
+  margin-top: -260px;
+  z-index: 3;
+  border-radius: 50%;
+  animation-name: BigBall;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.Gza {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  border: solid;
+  margin-top: -450px;
+  left: 0;
+}
+
+.Xazebi {
+  position: absolute;
+  width: 100%;
+  margin-top: 240px;
+  border: 3px dashed;
+  z-index: 2;
+}
+
+@keyframes Car {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes Saburavebi {
+  0% {
+    rotate: 0deg;
+  }
+
+  50% {
+    rotate: 360deg;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes BigBall {
+  0% {
+    transform: translate(0);
+    margin-top: -300px;
+  }
+
+  5% {
+    margin-top: -600px;
+  }
+
+  10% {
+    margin-top: -300px;
+  }
+
+  15% {
+    margin-top: -600px;
+  }
+
+  20% {
+    margin-top: -300px;
+  }
+
+  25% {
+    margin-top: -600px;
+  }
+
+  30% {
+    margin-top: -300px;
+  }
+
+  35% {
+    margin-top: -600px;
+  }
+
+  40% {
+    margin-top: -300px;
+  }
+
+  100% {
+    transform: translateX(-3800px);
+    margin-top: -300px;
+  }
+}
